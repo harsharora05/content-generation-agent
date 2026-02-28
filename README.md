@@ -1,23 +1,23 @@
 
-# 📄 README.md
+---
 
-````markdown
-# 🤖 Content Agent – Multi-Agent AI Backend
+```markdown
+# 🤖 Content Generation Agent
 
-A scalable FastAPI-based multi-agent system built using LangChain and LLM pipelines.  
+A scalable FastAPI-based multi-agent AI backend built using LangChain and LLM pipelines.  
 This project processes user queries through structured agent workflows and returns refined responses.
 
 ---
 
 ## 🚀 Features
 
-- ⚡ FastAPI async backend
+- ⚡ Async FastAPI backend
 - 🧠 Multi-agent pipeline architecture
 - 🔍 Review & refinement agent
-- 🌐 SERP API integration (if enabled)
+- 🌐 SERP API integration
 - 🔐 Environment-based configuration
 - 📦 uv for dependency management
-- 📘 Auto-generated Swagger docs
+- 📘 Auto-generated Swagger documentation
 
 ---
 
@@ -27,7 +27,7 @@ User Query
 ↓  
 Primary Agent  
 ↓  
-Review Agent (Refactor & Validate Output)  
+Review Agent  
 ↓  
 Final Response  
 
@@ -51,8 +51,8 @@ The system is modular and designed for scalability.
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/harsharora05/content-generation-agent.git
+cd content-generation-agent
 ```
 
 ### 2️⃣ Install dependencies (using uv)
@@ -72,8 +72,8 @@ OPENAI_API_KEY=your_openai_key
 SERPAPI_KEY=your_serpapi_key
 ```
 
-⚠️ Do NOT commit `.env`
-Use `.env.example` for reference.
+⚠️ Do NOT commit your `.env` file.  
+Use a `.env.example` file for sharing environment structure.
 
 ---
 
@@ -89,7 +89,7 @@ Server will start at:
 http://127.0.0.1:8000
 ```
 
-Swagger Docs:
+Swagger Documentation:
 
 ```
 http://127.0.0.1:8000/docs
@@ -101,7 +101,7 @@ http://127.0.0.1:8000/docs
 
 ### POST `/generate`
 
-#### Request Body
+### Request Body
 
 ```json
 {
@@ -109,7 +109,7 @@ http://127.0.0.1:8000/docs
 }
 ```
 
-#### Response
+### Response
 
 ```json
 {
@@ -117,6 +117,3 @@ http://127.0.0.1:8000/docs
   "response": "4"
 }
 ```
-
----
-
