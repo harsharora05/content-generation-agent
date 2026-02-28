@@ -50,7 +50,7 @@ The system is modular and designed for scalability.
 
 ### 1️⃣ Clone the repository
 
-```bash
+
 git clone https://github.com/harsharora05/content-generation-agent.git
 cd content-generation-agent
 ```
